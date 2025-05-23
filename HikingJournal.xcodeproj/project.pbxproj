@@ -13,6 +13,13 @@
 		4297AC8E2DDC98B0005842B2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4297AC8D2DDC98B0005842B2 /* Base */; };
 		4297AC902DDC98B2005842B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4297AC8F2DDC98B2005842B2 /* Assets.xcassets */; };
 		4297AC932DDC98B2005842B2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4297AC922DDC98B2005842B2 /* Base */; };
+		4297AC9C2DDC9A67005842B2 /* HotwireNative in Frameworks */ = {isa = PBXBuildFile; productRef = 4297AC9B2DDC9A67005842B2 /* HotwireNative */; };
+		4297ACA12DDDD4A0005842B2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4297ACA02DDDD4A0005842B2 /* Tab.swift */; };
+		4297ACA42DDDD638005842B2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4297ACA32DDDD638005842B2 /* TabBarController.swift */; };
+		4297ACA82DDE13DE005842B2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4297ACA72DDE13DE005842B2 /* MapView.swift */; };
+		4297ACAA2DDE154D005842B2 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4297ACA92DDE154D005842B2 /* MapController.swift */; };
+		4297ACAC2DDE25A5005842B2 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4297ACAB2DDE25A5005842B2 /* Hike.swift */; };
+		4297ACAF2DDE2650005842B2 /* HikeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4297ACAE2DDE2650005842B2 /* HikeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,12 @@
 		4297AC8F2DDC98B2005842B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4297AC922DDC98B2005842B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4297AC942DDC98B2005842B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4297ACA02DDDD4A0005842B2 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		4297ACA32DDDD638005842B2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4297ACA72DDE13DE005842B2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4297ACA92DDE154D005842B2 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		4297ACAB2DDE25A5005842B2 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
+		4297ACAE2DDE2650005842B2 /* HikeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4297AC9C2DDC9A67005842B2 /* HotwireNative in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +54,7 @@
 		4297AC7A2DDC98B0005842B2 = {
 			isa = PBXGroup;
 			children = (
-				4297AC852DDC98B0005842B2 /* HikingJournal */,
+				4297AC852DDC98B0005842B2 /* App */,
 				4297AC842DDC98B0005842B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +67,72 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4297AC852DDC98B0005842B2 /* HikingJournal */ = {
+		4297AC852DDC98B0005842B2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4297ACAD2DDE2622005842B2 /* ViewModels */,
+				4297ACA62DDE1399005842B2 /* Views */,
+				4297ACA22DDDD61C005842B2 /* Controllers */,
+				4297AC9F2DDDD48D005842B2 /* Models */,
+				4297AC9E2DDDCCE0005842B2 /* Resources */,
+				4297AC9D2DDDCCC1005842B2 /* Delegates */,
+				4297AC8A2DDC98B0005842B2 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4297AC9D2DDDCCC1005842B2 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
 				4297AC862DDC98B0005842B2 /* AppDelegate.swift */,
 				4297AC882DDC98B0005842B2 /* SceneDelegate.swift */,
-				4297AC8A2DDC98B0005842B2 /* ViewController.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		4297AC9E2DDDCCE0005842B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				4297AC8C2DDC98B0005842B2 /* Main.storyboard */,
 				4297AC8F2DDC98B2005842B2 /* Assets.xcassets */,
 				4297AC912DDC98B2005842B2 /* LaunchScreen.storyboard */,
 				4297AC942DDC98B2005842B2 /* Info.plist */,
 			);
-			path = HikingJournal;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4297AC9F2DDDD48D005842B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4297ACA02DDDD4A0005842B2 /* Tab.swift */,
+				4297ACAB2DDE25A5005842B2 /* Hike.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4297ACA22DDDD61C005842B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4297ACA32DDDD638005842B2 /* TabBarController.swift */,
+				4297ACA92DDE154D005842B2 /* MapController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4297ACA62DDE1399005842B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4297ACA72DDE13DE005842B2 /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4297ACAD2DDE2622005842B2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4297ACAE2DDE2650005842B2 /* HikeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +151,9 @@
 			dependencies = (
 			);
 			name = HikingJournal;
+			packageProductDependencies = (
+				4297AC9B2DDC9A67005842B2 /* HotwireNative */,
+			);
 			productName = HikingJournal;
 			productReference = 4297AC832DDC98B0005842B2 /* HikingJournal.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 4297AC7A2DDC98B0005842B2;
+			packageReferences = (
+				4297AC9A2DDC9A67005842B2 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */,
+			);
 			productRefGroup = 4297AC842DDC98B0005842B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +213,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4297AC8B2DDC98B0005842B2 /* ViewController.swift in Sources */,
+				4297ACAA2DDE154D005842B2 /* MapController.swift in Sources */,
+				4297ACA82DDE13DE005842B2 /* MapView.swift in Sources */,
 				4297AC872DDC98B0005842B2 /* AppDelegate.swift in Sources */,
 				4297AC892DDC98B0005842B2 /* SceneDelegate.swift in Sources */,
+				4297ACA42DDDD638005842B2 /* TabBarController.swift in Sources */,
+				4297ACAF2DDE2650005842B2 /* HikeViewModel.swift in Sources */,
+				4297ACAC2DDE25A5005842B2 /* Hike.swift in Sources */,
+				4297ACA12DDDD4A0005842B2 /* Tab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HikingJournal/Info.plist;
+				INFOPLIST_FILE = App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +400,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HikingJournal/Info.plist;
+				INFOPLIST_FILE = App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -361,6 +441,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4297AC9A2DDC9A67005842B2 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/hotwire-native-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4297AC9B2DDC9A67005842B2 /* HotwireNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4297AC9A2DDC9A67005842B2 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */;
+			productName = HotwireNative;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4297AC7B2DDC98B0005842B2 /* Project object */;
 }
