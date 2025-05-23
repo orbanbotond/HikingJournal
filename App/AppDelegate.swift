@@ -13,6 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .server(baseURL.appending(path: "configurations/ios_v1.json"))
         ])
 
+        Hotwire.registerBridgeComponents([
+            ButtonComponent.self
+        ])
+
         return true
     }
 }
